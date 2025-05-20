@@ -1,0 +1,126 @@
+.carousel-section {
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-img-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.header-img {
+  height: 70px;
+  width: auto;
+}
+
+.carousel-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.hero-img {
+  width: 280px;
+  height: 320px;
+  border-radius: 10px;
+  opacity: 0.7;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  flex-shrink: 0;
+}
+
+.middle-img {
+  opacity: 1;
+  transform: scale(1.05);
+  z-index: 1;
+  margin-top: 20px;
+}
+
+/* Arrows */
+.prev-arrow,
+.next-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  background: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.prev-arrow {
+  left: 10px;
+}
+
+.next-arrow {
+  right: 10px;
+}
+
+/* =================== Responsive Breakpoints =================== */
+
+/* 320px - 480px (Mobile Portrait) */
+@media (max-width: 480px) {
+  .hero-img,
+  .middle-img {
+    width: 200px;
+    height: 220px;
+    margin-top: 10px;
+  }
+
+  .carousel-images {
+    gap: 20px;
+  }
+
+  .prev-arrow,
+  .next-arrow {
+    font-size: 30px;
+  }
+}
+
+/* 481px - 768px (Mobile Landscape & Small Tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero-img,
+  .middle-img {
+    width: 220px;
+    height: 250px;
+    margin-top: 15px;
+  }
+
+  .carousel-images {
+    gap: 25px;
+  }
+}
+
+/* 769px - 1024px (Tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-img,
+  .middle-img {
+    width: 240px;
+    height: 280px;
+  }
+}
+
+/* 1025px - 1280px (Small Desktops) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .hero-img,
+  .middle-img {
+    width: 260px;
+    height: 310px;
+  }
+}
+
+/* 1281px - 1440px (Large Desktops) */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .hero-img,
+  .middle-img {
+    width: 280px;
+    height: 340px;
+  }
+}

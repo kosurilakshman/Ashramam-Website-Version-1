@@ -1,0 +1,67 @@
+.gallery-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.year-gallery-img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+  
+
+/* Small Devices (Mobile Portrait: max-width 480px) */
+@media (max-width: 480px) {
+  .year-gallery-img {
+    max-width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+  }
+
+  .gallery-single-image {
+    margin-top: 15px;
+    padding: 0 10px;
+  }
+}
+
+/* Tablets (min-width 481px and max-width 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .year-gallery-img {
+    max-width: 90%;
+    border-radius: 8px;
+  }
+
+  .gallery-single-image {
+    margin-top: 20px;
+    padding: 0 15px;
+  }
+}
+
+/* Medium Devices (Laptops: min-width 769px and max-width 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .year-gallery-img {
+    max-width: 480px;
+    border-radius: 10px;
+  }
+
+  .gallery-single-image {
+    margin-top: 25px;
+  }
+}
+
+/* Large Screens (Desktops: min-width 1025px and up) */
+@media (min-width: 1025px) {
+  .year-gallery-img {
+    max-width: 500px;
+    border-radius: 12px;
+  }
+
+  .gallery-single-image {
+    margin-top: 30px;
+  }
+}

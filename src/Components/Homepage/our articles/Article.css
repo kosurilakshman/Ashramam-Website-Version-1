@@ -1,0 +1,235 @@
+:root {
+    --heading-font: "Montserrat";
+    --subheading-font: "Martel";
+    --paragraph-font: "Open Sans";
+  
+    --navbar-bg-gradient: linear-gradient(
+      325.86deg,
+      rgba(254, 186, 23, 0.96) 27.97%,
+      rgba(254, 186, 23, 0.68) 64.64%
+    );
+    --bottom-navbar-bg: rgba(255, 147, 31, 0.9);
+  
+    --primary-box-bg: #fff3ca;
+    --secondary-box-bg: rgba(246, 185, 38, 0.7);
+  
+    --footer-bg-color: rgba(183, 0, 0, 0.7);
+    --footer-bg-image-opacity: 0.2;
+  
+    --page-bg-color: #f5f5f5;
+  }
+  
+  .article-container {
+    background: url('../../../assets/rectangle-bg.webp') center center no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 80%;
+    padding: 0 4rem;
+    gap:40px;
+    overflow: hidden;
+ 
+
+  }
+  .article-content
+  {
+    margin: 0 80px;
+  }
+  
+  .article-heading {
+    font-size: 32px;
+    font-family: var(--heading-font);
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-align: left;
+    line-height: 42px;
+  }
+  
+  .article-img {
+    height: 125px;
+    width: 190px;
+    margin-top: -13px;
+  }
+  
+  .article-boxes {
+    display: flex;
+    flex-wrap:auto;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+   
+  }
+  
+  .article-box {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 310px;
+    height:405px;
+    text-align: left;
+    transition: transform 0.3s ease;
+  
+  }
+  
+  .article-box:hover {
+    transform: translateY(-5px);
+  }
+  .article-mini-box
+
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .article-images {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .article-title {
+    font-family: var(--subheading-font);
+    font-size: 20px;
+    margin-top: 1rem;
+  }
+  
+  .article-text {
+    font-family: var(--paragraph-font);
+    font-size: 14px;
+    color: #555;
+    margin: 0.5rem 0;
+  }
+  
+  .artcle-date {
+    font-size: 13px;
+    color: #888;
+    margin-top: 0.5rem;
+  }
+  
+  .article-icon {
+    font-size: 20px;
+    color: #444;
+    margin-top: 0.5rem;
+  }
+
+  @media screen and  (min-width:320px) and (max-width:480px)
+  {
+    .article-container
+    {
+      flex-direction: column;
+    }
+    .article-img
+    {
+      margin-top: 40px;
+    }
+    .article-boxes
+    {
+      flex-direction: column;
+      gap: 2rem 0;
+      width:auto;
+    
+    }
+  }
+  @media screen and  (min-width:481px) and (max-width:768px)
+  {
+    .article-container
+    {
+      flex-direction: column;
+    }
+    .article-img
+    {
+      margin-top: 40px;
+    }
+    .article-boxes
+    {
+      flex-direction: column;
+      gap: 2rem 0;
+      width:auto;
+    
+    }
+  }
+  @media screen and  (min-width:769px) and (max-width:1024px)
+  {
+    
+    .article-heading
+    {
+      font-size:36px;
+      font-weight: 300;
+      margin-bottom: -14px;
+      text-align: center;
+      line-height: 36px
+    }
+    .article-container
+    {
+      flex-direction: column;
+    }
+    .article-img
+    {
+      width:240px;
+      margin-top: 40px;
+    }
+    .article-boxes
+    {
+      gap: 2rem;
+      width:auto;
+      flex-wrap:auto;
+    
+    }
+  }
+
+
+  @media screen and(min-width:1025px) and (max-width:1280px)
+  {
+    
+    .article-heading
+    {
+      font-size:36px;
+      font-weight: 300;
+      margin-bottom: -14px;
+      text-align: center;
+      line-height: 36px
+    }
+  
+
+    .article-img
+    {
+      width:240px;
+      margin-top: 40px;
+    }
+    .article-boxes
+    {
+      gap: 2rem;
+      width:auto;
+    
+    }
+  }
+
+  
+  @media screen and(min-width:1281px) and (max-width:1440px)
+  {
+    
+    .article-heading
+    {
+      font-size:36px;
+      font-weight: 300;
+      margin-bottom: -14px;
+      text-align: center;
+      line-height: 36px
+    }
+  
+
+    .article-img
+    {
+      width:240px;
+      margin-top: 40px;
+    }
+    .article-boxes
+    {
+      gap: 2rem;
+      width:auto;
+    
+    }
+  }
+  

@@ -1,0 +1,268 @@
+:root {
+  --heading-font: "Montserrat";
+  --subheading-font: "Martel";
+  --paragraph-font: "Open Sans";
+
+  --navbar-bg-gradient: linear-gradient(
+    325.86deg,
+    rgba(254, 186, 23, 0.96) 27.97%,
+    rgba(254, 186, 23, 0.68) 64.64%
+  );
+  --bottom-navbar-bg: rgba(255, 147, 31, 0.9);
+
+  --primary-box-bg: #fff3ca;
+  --secondary-box-bg: rgba(246, 185, 38, 0.7);
+
+  --footer-bg-color: rgba(183, 0, 0, 0.5);
+  --page-bg-color: #f5f5f5;
+}
+
+
+
+
+
+
+
+
+
+
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    gap: 20px;
+    text-align: left;
+    background:url('../../../assets/templehero-bg.webp');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .hero-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .hero-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: var(--heading-font);
+  }
+  
+  .hero-content p {
+    font-size: 1.3rem;
+    font-family: var(--heading-font);
+    margin: 10px 0 20px;
+  }
+  
+  .hero-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end; /* Align bottoms of 1 and 3 */
+    gap: 20px;
+    flex-shrink: 0;
+  }
+  
+
+  
+  /* Equal size for 1 and 3 */
+  .deity-1,
+  .deity-3 {
+    width: 250px;
+    height: 280px;
+    margin-top: 50px;
+  }
+  
+  /* Center image (deity-2) slightly higher */
+  .deity-2 {
+    width: 250px;
+    height: 300px;
+    margin-bottom: 50px; /* Push it upward */
+  }
+  /* 320px - 480px: Small phones */
+@media screen and (max-width: 480px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    background-size: cover;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+  .hero-content h2
+  {
+    font-size: 24px;
+    margin-bottom: 24px;  
+  }
+  .hero-content p
+  {
+    font-size: 18px;
+  }
+
+  .hero-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .deity-1,
+  .deity-2,
+  .deity-3 {
+    width: 200px;
+    height: auto;
+    margin: 0;
+  }
+}
+
+/* 481px - 768px: Tablets & small screens */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    background-size: cover;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+  .hero-content h2
+  {
+    font-size: 26px;
+    margin-bottom: 24px;  
+  }
+  .hero-content p
+  {
+    font-size: 18px;
+  }
+
+  .hero-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .deity-1,
+  .deity-3 {
+    width: 220px;
+    height: 250px;
+    margin-top: 30px;
+  }
+
+  .deity-2 {
+    width: 220px;
+    height: 270px;
+    margin-bottom: 30px;
+  }
+}
+
+/* 769px - 1024px: Tablets landscape & small desktops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero-section {
+    padding: 40px;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .hero-content {
+    max-width: 500px;
+  }
+  .hero-content h2
+  {
+    font-size: 24px;
+    margin-bottom: 24px;  
+  }
+  .hero-content p
+  {
+    font-size: 18px;
+  }
+  .hero-images {
+    gap: 15px;
+  }
+
+  .deity-1,
+  .deity-3 {
+    width: 240px;
+    height: 270px;
+    margin-top: 40px;
+  }
+
+  .deity-2 {
+    width: 210px;
+    height: 290px;
+    margin-bottom: 40px;
+  }
+}
+
+/* 1025px - 1280px: Standard desktops */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .hero-section {
+    padding: 50px;
+  }
+
+  .hero-content {
+    max-width: 550px;
+  }
+  .hero-content h2
+  {
+    font-size: 28px;
+    margin-bottom: 24px;  
+  }
+  .hero-content p
+  {
+    font-size: 18px;
+  }
+
+  .deity-1,
+  .deity-3 {
+    width: 220px;
+    height: 280px;
+    margin-top: 50px;
+  }
+
+  .deity-2 {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+}
+
+/* 1281px - 1440px: Large desktops */
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+  .hero-section {
+    padding: 50px;
+  }
+
+  .hero-content {
+    max-width: 550px;
+  }
+  .hero-content h2
+  {
+    font-size: 28px;
+    margin-bottom: 24px;  
+  }
+  .hero-content p
+  {
+    font-size: 18px;
+  }
+
+  .deity-1,
+  .deity-3 {
+    width: 220px;
+    height: 280px;
+    margin-top: 50px;
+  }
+
+  .deity-2 {
+    width: 200px;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+}

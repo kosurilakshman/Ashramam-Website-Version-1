@@ -1,0 +1,221 @@
+:root {
+    --heading-font: "Montserrat";
+    --subheading-font: "Martel";
+    --paragraph-font: "Open Sans";
+  
+    --navbar-bg-gradient: linear-gradient(
+      325.86deg,
+      rgba(254, 186, 23, 0.96) 27.97%,
+      rgba(254, 186, 23, 0.68) 64.64%
+    );
+    --bottom-navbar-bg: rgba(255, 147, 31, 0.9);
+  
+    --primary-box-bg: #fff3ca;
+    --secondary-box-bg: rgba(246, 185, 38, 0.7);
+  
+    --footer-bg-color: rgba(183, 0, 0, 0.5);
+    --page-bg-color: #f5f5f5;
+  }
+
+
+.temple-section-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px 20px;
+    margin: 0 40px;
+    text-align: left;
+    overflow: hidden;
+  }
+  
+  .gayatrimandir-heading
+  {
+    width: 60%;
+    height: 50px;
+  }
+  .gayatrimandir-img
+  {
+    width:400px;
+    height:400px;
+  }
+  .gayatrimandir-text
+  {
+    font-family: var(--heading-font);
+    font-size: 16px;
+    text-align: justify;
+    line-height: 25px;
+  }
+  .new-paragraph-section
+  {
+    background: url('../../../assets/srikrishnabg.webp');
+    background-size: 100% 100%;
+    padding: 100px 90px;
+    margin:40px 0px;
+  }
+  .new-paragraph-section p
+  {
+    font-size: 18px;
+    font-family: var(--heading-font);
+    background-color: #fff9e5;
+    border-radius: 18px 0 18px 0;
+    padding: 60px  40px;
+  }
+
+  /* 320px - 480px: Small phones */
+@media screen and (max-width: 480px) {
+  .temple-section-flex {
+    flex-direction: column;
+    margin: 0 10px;
+    padding: 30px 10px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .gayatrimandir-heading {
+    width: 90%;
+    height: auto;
+  }
+
+  .gayatrimandir-img {
+    width: 100%;
+    height:300px;
+  }
+
+  .gayatrimandir-text {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .new-paragraph-section {
+    padding: 60px 20px;
+    background-size: cover;
+  }
+
+  .new-paragraph-section p {
+    font-size: 16px;
+    padding: 30px 20px;
+  }
+}
+
+/* 481px - 768px: Tablets portrait */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .temple-section-flex {
+    flex-direction: column;
+    margin: 0 20px;
+    padding: 40px 15px;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .gayatrimandir-heading {
+    width: 50%;
+  }
+
+  .gayatrimandir-img {
+    width: 100%;
+    height:300px;
+  }
+
+  .gayatrimandir-text {
+    font-size: 15px;
+  }
+
+  .new-paragraph-section {
+    padding: 70px 30px;
+    background-size: cover;
+  }
+
+  .new-paragraph-section p {
+    font-size: 17px;
+    line-height: 25px;
+    padding: 40px 30px;
+  }
+}
+
+/* 769px - 1024px: Tablets landscape & small laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .temple-section-flex {
+    flex-direction: row;
+    margin: 0 30px;
+    padding: 50px 20px;
+    gap: 30px;
+  }
+
+  .gayatrimandir-img {
+    width: 252px;
+    height: 345px;
+  }
+
+  .gayatrimandir-text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .new-paragraph-section {
+    padding: 80px 50px;
+  }
+
+  .new-paragraph-section p {
+    font-size: 16px;
+    padding: 50px 35px;
+    line-height: 20px;
+    text-align: justify;
+  }
+}
+
+/* 1025px - 1280px: Standard desktops */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .temple-section-flex {
+    padding: 50px 30px;
+    margin: 0 30px;
+    gap: 30px;
+  }
+
+  .gayatrimandir-img {
+    width: 350px;
+    height: auto;
+  }
+
+  .gayatrimandir-text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .new-paragraph-section {
+    padding: 90px 70px;
+  }
+
+  .new-paragraph-section p {
+    font-size: 18px;
+    padding: 60px 40px;
+  }
+}
+
+/* 1281px - 1440px: Large desktops */
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+  .temple-section-flex {
+    margin: 0 40px;
+    padding: 60px 40px;
+  }
+
+  .gayatrimandir-img {
+    width: 400px;
+    height: 300px;
+  }
+  .gayatrimandir-text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .new-paragraph-section {
+    padding: 100px 90px;
+  }
+
+  .new-paragraph-section p {
+    font-size: 18px;
+    padding: 60px 40px;
+  }
+}
+
+  

@@ -1,0 +1,237 @@
+:root {
+  /* Font Families */
+  --heading-font: "Montserrat";
+  --subheading-font: "Martel";
+  --paragraph-font: "Open Sans";
+
+  /* Navbar Colors */
+  --navbar-bg-gradient: linear-gradient(325.86deg, rgba(254, 186, 23, 0.96) 27.97%, rgba(254, 186, 23, 0.68) 64.64%);
+  --bottom-navbar-bg: rgba(255, 147, 31, 0.9);
+
+  /* Box Colors */
+  --primary-box-bg: #FFF3CA; /* 100% opacity */
+  --secondary-box-bg: rgba(246, 185, 38, 0.7); /* 70% opacity */
+
+  /* Footer Colors */
+  --footer-bg-color: rgba(183, 0, 0, 0.7); /* B70000 with 70% opacity */
+  --footer-bg-image-opacity: 0.2; /* 20% opacity */
+
+  /* Page Background */
+  --page-bg-color: #f5f5f5; /* 100% opacity */
+}
+
+/* General styles for .intro-section */
+.intro-section {
+  background: url('../../../assets/ourstory-bgtop.webp');
+  background-size: 100% 115%;
+  
+}
+
+/* Responsive text styles */
+.intro-text {
+  flex: 1;
+  overflow: hidden;
+}
+
+.intro-text h1 {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 40px;
+  max-width: 500px;
+}
+
+.subtitle {
+  font-family: var(--subheading-font);
+  font-weight: 400;
+  font-size: 19px;
+  color: #666;
+  line-height: 27px;
+  max-width: 520px;
+}
+
+.hero-block {
+  flex: 1;
+  text-align: right;
+  overflow: hidden;
+}
+
+.hero-block img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Background content */
+.intro-bg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+  padding: 4rem 120px;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+
+/* Media Queries for responsiveness */
+
+/* 320px to 480px */
+@media (max-width: 480px) {
+  .intro-section {
+    height: 65vh;
+    background:none;
+    margin:0px 0;
+   
+  }
+
+  .intro-bg {
+    padding:0  2rem;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+  }
+
+  .intro-text h1 {
+    font-size: 26px;
+    max-width: 100%;
+    font-weight: 500;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    max-width: 100%;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .hero-block img {
+    max-width: 100%;
+  }
+}
+
+/* 481px to 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .intro-section {
+    height: 50vh;
+    background: none;
+    
+  }
+
+  .intro-bg {
+    align-items: center;
+    padding:20px 40px;
+    gap:30px;
+  }
+  .ourstorybg-wrapper
+  {
+    padding: 0  20px;
+  }
+
+  .intro-text h1 {
+    font-size: 28px;
+    max-width: 100%;
+    font-weight: 500;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    max-width: 100%;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .hero-block img {
+    height: 300px;
+    width: 400px;
+  }
+}
+
+/* 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .intro-section {
+    height: 45vh;
+    background-size:100% 125%;
+    background-repeat: no-repeat;
+  }
+
+  .intro-bg {
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .intro-text h1 {
+    font-size: 28px;
+    max-width: 100%;
+    font-weight: 500;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    max-width: 100%;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .hero-block img {
+    max-width: 100%;
+  }
+}
+
+/* 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .intro-section {
+    height: 45vh;
+    background-size:100% 125%;
+    background-repeat: no-repeat;
+  }
+
+  .intro-bg {
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .intro-text h1 {
+    font-size: 28px;
+    max-width: 100%;
+    font-weight: 500;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    max-width: 100%;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .hero-block img {
+    max-width: 100%;
+  }
+}
+
+/* 1281px to 1440px */
+@media (min-width: 1281px) and (max-width: 1440px) {
+
+
+  .intro-bg {
+    padding: 2rem 5rem;
+    align-items: center;
+  }
+
+  .intro-text h1 {
+    font-size: 28px;
+    max-width: 100%;
+    font-weight: 500;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    max-width: 100%;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .hero-block img {
+    max-width: 100%;
+  }
+}

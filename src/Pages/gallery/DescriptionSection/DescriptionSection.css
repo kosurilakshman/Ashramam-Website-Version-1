@@ -1,0 +1,186 @@
+/* Section-4 */
+:root {
+  /* Font Families */
+  --heading-font: "Montserrat";
+  --subheading-font: "Martel";
+  --paragraph-font: "Open Sans";
+
+  /* Navbar Colors */
+  --navbar-bg-gradient: linear-gradient(325.86deg, rgba(254, 186, 23, 0.96) 27.97%, rgba(254, 186, 23, 0.68) 64.64%);
+  --bottom-navbar-bg: rgba(255, 147, 31, 0.9);
+
+  /* Box Colors */
+  --primary-box-bg: #FFF3CA; /* 100% opacity */
+  --secondary-box-bg: rgba(246, 185, 38, 0.7); /* 70% opacity */
+
+  /* Footer Colors */
+  --footer-bg-color: rgba(183, 0, 0, 0.7); /* B70000 with 70% opacity */
+  --footer-bg-image-opacity: 0.2; /* 20% opacity */
+
+  /* Page Background */
+  --page-bg-color: #f5f5f5; /* 100% opacity */
+}
+
+.header-img-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; /* optional spacing below */
+  }
+  
+  .header-img {
+    height: 70px;
+    width: auto;
+  }
+
+.description-section {
+  
+     display: flex ;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 20px auto;
+  
+  }
+
+  
+  .description-section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1200px;
+    width: 90%;
+    flex-wrap: wrap;
+    text-align: justify;
+    /* margin-left: 50px; */
+   
+  }
+  
+  .description-section-content img {
+   
+    max-width: 400px; 
+           /* But no more than 400px */
+    /* height: 250px;            Maintains aspect ratio */
+  
+
+  }
+  
+  .description-section p {
+    font-family: var(--paragraph-font, "Open Sans", sans-serif); 
+    max-width: 760px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 6rem;
+  }
+
+  @media (max-width: 480px) {
+    .description-section-content img {
+      max-width: 150px;
+      margin-right: 100px;
+    }
+  
+    .description-section p {
+      font-size: 12px;
+      line-height: 1.4;
+      text-align: justify;
+      margin-right: 60px;
+    }
+
+
+        .image {
+          margin-right: 100px;
+        }
+    
+  }
+
+
+/* Media Queries */
+
+/* For Small Devices (Mobile Portrait: max-width 480px) */
+
+@media (max-width: 480px) {
+    .description-section-content {
+      flex-direction: column; /* Stack content vertically */
+      gap: 40px;              /* Less space between items */
+    }
+  
+    .description-section-content img {
+      max-width: 150px;
+      margin-right: 0;         /* Reset margin */
+    }
+
+    .header-img {
+        height: 50px;
+      }
+  
+    .description-section p {
+      font-size: 14px;
+      line-height: 1.4;
+      margin-right: 0;
+      /* text-align: center; */
+      margin-bottom: 3rem; 
+    }
+  }
+
+  
+  /* For Larger Devices (Tablets: min-width 481px and max-width 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .description-section-content {
+      gap: 40px; /* Reduced gap between items */
+      margin-left: 30px; /* Adjust left margin */
+    }
+  
+    .description-section-content img {
+      max-width: 200px; 
+    }
+  
+    .description-section p {
+      font-size: 14px;
+      line-height: 1.5;
+      max-width: 500px;
+      text-align: left;
+      margin-bottom: 5rem;
+    }
+  }
+  
+  /* For Medium Devices (Small Laptops/Desktops: min-width 769px) */
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .description-section-content {
+      gap: 60px; /* Default gap between items */
+      margin-left: 40px;
+    }
+  
+    .description-section-content img {
+      max-width: 250px;
+    }
+  
+    .description-section p {
+      font-size: 15px;
+      line-height: 1.6;
+      max-width: 550px; /* Adjusted max width for readability */
+      margin-bottom: 6rem;
+    }
+  }
+  
+  /* For Larger Screens (Large Desktops: min-width 1025px) */
+
+  @media (min-width: 1025px) {
+    .description-section-content {
+      gap: 80px; /* More space between items */
+      margin-left: 50px;
+    }
+  
+    .description-section-content img {
+      max-width: 300px;
+    }
+  
+    .description-section p {
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 760px;
+      margin-bottom: 6rem;
+    }
+  }

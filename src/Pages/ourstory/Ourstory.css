@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap');
+
+:root {
+  /* Font Families */
+  --heading-font: "Montserrat";
+  --subheading-font: "Martel";
+  --paragraph-font: "Open Sans";
+  
+  /* Navbar Colors */
+  --navbar-bg-gradient: linear-gradient(325.86deg, rgba(254, 186, 23, 0.96) 27.97%, rgba(254, 186, 23, 0.68) 64.64%);
+  --bottom-navbar-bg: rgba(255, 147, 31, 0.9);
+
+  /* Box Colors */
+  --primary-box-bg: #FFF3CA; /* 100% opacity */
+  --secondary-box-bg: rgba(246, 185, 38, 0.7); /* 70% opacity */
+
+  /* Footer Colors */
+  --footer-bg-color: rgba(183, 0, 0, 0.7); /* B70000 with 70% opacity */
+  --footer-bg-image-opacity: 0.2; /* 20% opacity */
+
+  /* Page Background */
+  --page-bg-color: #f5f5f5; /* 100% opacity */
+}
+
+.story-section {
+  padding: 0;
+}
+
+.story-section h2 {
+  text-align: center;
+}
+
+.ourstory-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+.ourstorybg-wrapper {
+  position: relative;
+  padding: 40px 20px;
+  z-index: 1; /* Ensure it's below the content */
+}
+
+.ourstorybg-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* Cover full height */
+  background-image: url('../../assets/nav-img8.webp'); /* Check path validity */
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  opacity: 0.2;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.story-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 120px;
+  gap: 80px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Image styles */
+.story-img-1 img {
+  max-width: 500px;
+  height: 250px;
+}
+
+.story-img-2 img {
+  max-width: 500px;
+  height: 300px;
+}
+
+.story-img-3 img {
+  width: 380px;
+  height: 250px;
+}
+
+/* Paragraph styles */
+.ashram-history {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-top: 10px;
+  font-family: var(--heading-font);
+  font-weight: 500;
+}
+
+.para-1, .para-2, .para-3 {
+  flex: 1;
+  font-size: 17px;
+  font-family: var(--heading-font);
+  line-height: 1.7;
+  margin-top: 0;
+  margin-bottom: 5rem;
+  font-weight: 500;
+}
+
+.ashram-history-origin,
+.ashram-history-name,
+.ashram-history-location {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+.image-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.Images {
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  align-items: center; /* Vertically align if needed */
+  gap: 30px; /* Space between the images */
+  flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+}
+
+.Images img {
+  height: 200px; /* Adjust the size of the oval */
+  border-radius: 50%; /* Make it circular initially */
+  object-fit: cover; /* Ensure the image covers the oval area */
+}
+
+/* Create the oval shape */
+.Images img {
+  border-radius: 1% / 25%; /* Creates an oval shape */
+}
+
+/* Media Queries for responsiveness */
+
+/* 320px to 480px */
+@media (max-width: 480px) {
+  .story-row {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+    gap: 30px;
+  }
+  .ourstorybg-wrapper::before
+  {
+    background: none;
+  }
+  .story-img-1 img,
+  .story-img-2 img,
+  .story-img-3 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .ashram-history,
+  .para-1,
+  .para-2,
+  .para-3 {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+
+  .image-section {
+    padding: 0px;
+  }
+
+  .Images img {
+    height: 150px;
+    display: none;
+  }
+}
+
+/* 481px to 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .story-row {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+    gap: 30px;
+  }
+  .ourstorybg-wrapper::before
+  {
+    background: none;
+  }
+  .story-img-1 img,
+  .story-img-2 img,
+  .story-img-3 img {
+    width:400px;
+    height:300px;
+  }
+
+  .ashram-history,
+  .para-1,
+  .para-2,
+  .para-3 {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+
+  .image-section {
+    padding: 0px;
+  }
+
+  .Images img {
+    height: 150px;
+    display: none;
+  }
+}
+
+/* 769px to 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .story-row {
+  
+    align-items: center;
+    padding: 0 50px;
+    gap: 30px;
+  }
+
+  .story-img-1 img,
+  .story-img-2 img,
+  .story-img-3 img {
+    max-width: 40%;
+    height:280px;
+  }
+
+  .ashram-history,
+  .para-1,
+  .para-2,
+  .para-3 {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+
+  .image-section {
+    padding: 0px;
+  }
+
+  .Images img {
+    height: 150px;
+    display: none;
+  }
+}
+
+/* 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .story-row {
+  
+    align-items: center;
+    padding: 0 50px;
+    gap: 30px;
+  }
+
+  .story-img-1 img,
+  .story-img-2 img,
+  .story-img-3 img {
+    max-width: 40%;
+    height:280px;
+  }
+
+  .ashram-history,
+  .para-1,
+  .para-2,
+  .para-3 {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+
+  .image-section {
+    padding: 0px;
+  }
+
+  .Images img {
+    height: 150px;
+    display: none;
+  }
+}
+
+/* 1281px to 1440px */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .story-row {
+  
+    align-items: center;
+    padding: 0 50px;
+    gap: 30px;
+  }
+
+  .story-img-1 img,
+  .story-img-2 img,
+  .story-img-3 img {
+    max-width: 40%;
+    height:280px;
+  }
+
+  .ashram-history,
+  .para-1,
+  .para-2,
+  .para-3 {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+
+  .image-section {
+    padding: 0px;
+  }
+
+  .Images img {
+    height: 150px;
+    display: none;
+  }
+}
+
+/* 1025px to 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .story-row {
+  
+    align-items: center;
+    padding: 0 120px;
+    gap: 30px;
+  }
+
+  .story-img-1 img,
+  .story-img-2 img,
+  .story-img-3 img {
+    max-width: 40%;
+    height:280px;
+  }
+
+  .ashram-history,
+  .para-1,
+  .para-2,
+  .para-3 {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+
+  .image-section {
+    padding: 0px;
+  }
+
+  .Images img {
+    height: 150px;
+    display: none;
+  }
+}

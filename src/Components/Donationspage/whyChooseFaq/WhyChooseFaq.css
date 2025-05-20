@@ -1,0 +1,328 @@
+:root {
+    /* Font Families */
+    --heading-font: "Montserrat";
+    --subheading-font: "Martel";
+    --paragraph-font: "Open Sans";
+  
+    /* Navbar Colors */
+    --navbar-bg-gradient: linear-gradient(
+      325.86deg,
+      rgba(254, 186, 23, 0.96) 27.97%,
+      rgba(254, 186, 23, 0.68) 64.64%
+    );
+    --bottom-navbar-bg: rgba(255, 147, 31, 0.9);
+  
+    /* Box Colors */
+    --primary-box-bg: #fff3ca; /* 100% opacity */
+    --secondary-box-bg: rgba(246, 185, 38, 0.7); /* 70% opacity */
+  
+    /* Footer Colors */
+    --footer-bg-color: rgba(183, 0, 0, 0.7); /* B70000 with 70% opacity */
+    --footer-bg-image-opacity: 0.2; /* 20% opacity */
+  
+    /* Page Background */
+    --page-bg-color: #f5f5f5; /* 100% opacity */
+  }
+  .whychoose-faq-container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+  .whychoosefaq_container h4 {
+    font-size: 22px;
+    font-family: var(--subheading-font);
+    font-weight:Bold;
+  }
+  
+  .whychoosefaq_container h2 {
+    font-size:24px;
+    font-family: var(--paragraph-font);
+    font-weight: 100;
+  }
+  
+  .whychoose-faq-box {
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .whychoose-faq-box.open {
+    background-color: var(--secondary-box-bg);
+  }
+  
+  .whychoose-faq-question {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--subheading-font);
+    background: var(--secondary-box-bg);
+    border: none;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .whychoose-faq-icon {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  .whychoose-faq-answer {
+   
+    font: size 18px;;
+    color: #000;
+    font-family: var(--paragraph-font);
+    background: var(--secondary-box-bg);
+  }
+  
+  .whychoose-faq-answer a {
+    color: #000;
+    text-decoration: underline;
+    font-weight: 500;
+ 
+  }
+  
+
+  /* ===================================================================
+                        Responsiveness
+  =====================================================================*/
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .whychoosefaq_container {
+        margin: 15px 0;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .whychoose-faq-container {
+        max-width: 100%;
+        margin: 10px auto;
+        padding: 0 10px;
+    }
+
+    .whychoosefaq {
+        font-size: 18px;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+
+    .whychoosefaq_container h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 5px;
+    }
+
+    .whychoose-faq-box {
+        border-radius: 5px;
+        margin-bottom: 6px;
+        box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .whychoose-faq-question {
+        /* padding: 10px; */
+        font-size: 14px;
+    }
+
+    .whychoose-faq-icon {
+        font-size: 25px;
+    }
+
+    .whychoose-faq-answer {
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .whychoosefaq_container {
+      margin: 20px 0;
+      text-align: center;
+      padding: 0 20px;
+  }
+
+  .whychoose-faq-container {
+      max-width: 90%;
+      margin: 15px auto;
+      padding: 0 15px;
+  }
+
+  .whychoosefaq {
+      font-size: 20px;
+      font-weight: 400;
+      margin-top: 12px;
+  }
+
+  .whychoosefaq_container h2 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 8px;
+  }
+
+  .whychoose-faq-box {
+      border-radius: 6px;
+      margin-bottom: 10px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .whychoose-faq-question {
+      font-size: 16px;
+      padding: 12px;
+  }
+
+  .whychoose-faq-icon {
+      font-size: 28px;
+  }
+
+  .whychoose-faq-answer {
+      padding: 12px;
+      font-size: 16px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .whychoosefaq_container {
+      margin: 30px 0;
+      text-align: center;
+      padding: 0 30px;
+  }
+
+  .whychoose-faq-container {
+      max-width: 80%;
+      margin: 20px auto;
+      padding: 0 20px;
+  }
+
+  .whychoosefaq {
+      font-size: 22px;
+      font-weight: 500;
+      margin-top: 14px;
+  }
+
+  .whychoosefaq_container h2 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-top: 10px;
+  }
+
+  .whychoose-faq-box {
+      border-radius: 8px;
+      margin-bottom: 12px;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .whychoose-faq-question {
+      font-size: 18px;
+      padding: 14px;
+  }
+
+  .whychoose-faq-icon {
+      font-size: 30px;
+  }
+
+  .whychoose-faq-answer {
+      padding: 14px;
+      font-size: 17px;
+  }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .whychoosefaq_container {
+      margin: 40px 0;
+      text-align: center;
+      padding: 0 40px;
+  }
+
+  .whychoose-faq-container {
+      max-width: 75%;
+      margin: 25px auto;
+      padding: 0 25px;
+  }
+
+  .whychoosefaq {
+      font-size: 22px;
+      font-weight: 400;
+      margin-top: 16px;
+  }
+
+  .whychoosefaq_container h2 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-top: 12px;
+  }
+
+  .whychoose-faq-box {
+      border-radius: 10px;
+      margin-bottom: 14px;
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.18);
+  }
+
+  .whychoose-faq-question {
+      font-size: 16px;
+  }
+
+  .whychoose-faq-icon {
+      font-size: 22px;
+  }
+
+  .whychoose-faq-answer {
+      padding: 16px;
+      font-size: 16px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .whychoosefaq_container {
+      margin: 20px 0;
+      text-align: center;
+      padding: 0 50px;
+  }
+
+  .whychoose-faq-container {
+      max-width: 70%;
+      margin: 30px auto;
+      padding: 0 30px;
+  }
+
+  .whychoosefaq {
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 18px;
+  }
+
+  .whychoosefaq_container h2 {
+      font-size: 30px;
+      font-weight: 600;
+      margin-top: 15px;
+  }
+
+  .whychoose-faq-box {
+      border-radius: 12px;
+      margin-bottom: 16px;
+      box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .whychoose-faq-question {
+      font-size: 17px;
+      padding: 18px;
+  }
+
+  .whychoose-faq-icon {
+      font-size: 24px;
+  }
+
+  .whychoose-faq-answer {
+      padding: 18px;
+      font-size: 17px;
+  }
+}

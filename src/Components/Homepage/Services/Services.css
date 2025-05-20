@@ -1,0 +1,498 @@
+:root {
+  /* Font Families */
+  --heading-font: "Montserrat";
+  --subheading-font: "Martel";
+  --paragraph-font: "Open Sans";
+
+  /* Navbar Colors */
+  --navbar-bg-gradient: linear-gradient(
+    325.86deg,
+    rgba(254, 186, 23, 0.96) 27.97%,
+    rgba(254, 186, 23, 0.68) 64.64%
+  );
+  --bottom-navbar-bg: rgba(255, 147, 31, 0.9);
+
+  /* Box Colors */
+  --primary-box-bg: #fff3ca;
+  --secondary-box-bg: rgba(246, 185, 38, 0.7);
+
+  /* Footer Colors */
+  --footer-bg-color: rgba(183, 0, 0, 0.7);
+  --footer-bg-image-opacity: 0.2;
+
+  /* Page Background */
+  --page-bg-color: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 85vh; /* Full screen height */
+  overflow: hidden;
+  z-index: 10;
+  background: black; /* Optional: background fill if video has empty space */
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Show entire video */
+}
+
+
+.service-container {
+  margin:10PX 0;
+  position: relative;
+}
+
+
+.service-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header-img {
+  height: 70px;
+  width: auto;
+}
+
+/* Background Wrapper with image above .service-box2 */
+.service-bg-wrapper {
+  position: relative;
+  padding: 40px 20px;
+  z-index: 2;
+}
+
+.service-bg-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 20px; /* adjust upward pull */
+  left: 0;
+  right: 0;
+  height: 1150px;
+  background-image: url('../../../assets/nav-img8.png'); /* change path if needed */
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  opacity: 0.2;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.service-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 40px 0;
+  padding: 60px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+.service-grid a
+{
+  text-decoration: none;
+  color:#000;
+}
+
+.service-box {
+  background-color: var(--primary-box-bg);
+  height: 300px;
+  min-height: 240px;
+  width: 290px;
+  border-radius: 2px;
+  text-align: center;
+  font-family: var(--heading-font);
+  padding: 20px;
+}
+
+.services-img
+{
+  width:90%;
+  height:160px;
+}
+
+.service-title {
+  font-family: var(--paragraph-font);
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.service-para {
+  font-size: 14px;
+  font-family: var(--paragraph-font);
+  font-weight: 400;
+  text-align: left;
+  line-height: 20px;
+}
+
+/* Lower stacking so background appears above */
+.service-box2 {
+  background: var(--primary-box-bg);
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  position: relative;
+  z-index: 0;
+}
+
+.service-box-img {
+  height: 280px;
+  width: 280px;
+}
+
+.service-box-content {
+  width: 55%;
+}
+
+.service-text {
+  width: 95%;
+  font-size: 18px;
+  font-family: var(--heading-font);
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.service-btn {
+  padding: 12px 36px;
+  margin-top: 10px;
+  border-radius: 18px;
+  border: none;
+  background-color: #B70000;
+  color: #fff;
+  cursor: pointer;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.volunteer-form input,
+.volunteer-form select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.volunteer-form button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  background:var(--navbar-bg-gradient);
+  border:none;
+}
+
+.close-btn {
+  background:var(--navbar-bg-gradient);
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:480px)
+{
+  .header-img
+  {
+    height:60px;
+  }
+  .video-container {
+    height: 60vh;
+  }
+  .service-grid
+  {
+    grid-template-columns: repeat(1,1fr);
+    padding: 0;
+  }
+  .service-bg-wrapper
+  {
+    background-image: none;
+  }
+  .service-bg-wrapper:before
+  {
+    background-image: none;
+  }
+  .service-box2
+  {
+    background: var(--primary-box-bg);
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    overflow: hidden;
+  }
+  .service-box-content {
+    width: 85%;
+}
+.service-text
+{
+  text-align: justify;
+}
+.service-btn
+{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+  .modal-box {
+    max-width: 90%;
+    padding: 1.5rem;
+  }
+
+  .volunteer-form input,
+  .volunteer-form select {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .volunteer-form button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (min-width:481px) and (max-width:768px)
+{
+  .header-img
+  {
+    height:60px;
+  }
+  .video-container {
+    height: 70vh;
+  }
+  .service-grid
+  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0 auto; /* ✅ This centers the container horizontally */
+  }
+  .service-box
+  {
+    width:95%;
+  }
+  .service-bg-wrapper
+  {
+    background-image: none;
+  }
+  .service-bg-wrapper:before
+  {
+    background-image: none;
+  }
+ .service-para
+ {
+  text-align: center;
+ }
+ .service-box2
+ {
+   background: var(--primary-box-bg);
+   display: flex;
+   flex-direction: column;
+   height:auto;
+   justify-content: center;
+   align-items: center;
+   gap: 23px;
+   overflow: hidden;
+ }
+ .service-box-content {
+   width: 85%;
+}
+.service-text
+{
+ text-align: justify;
+}
+.service-btn
+{
+ font-size: 16px;
+ margin-bottom: 20px;
+}
+  .modal-box {
+    max-width: 85%;
+    padding: 1.8rem;
+  }
+
+  .volunteer-form input,
+  .volunteer-form select {
+    font-size: 15px;
+  }
+
+  .volunteer-form button {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px)
+{
+  .header-img
+  {
+    height:60px;
+  }
+  .video-container {
+    height: 80vh;
+  }
+  .service-grid
+  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0 auto; /* ✅ This centers the container horizontally */
+  }
+  .service-box
+  {
+    width:95%;
+  }
+  .service-bg-wrapper
+  {
+    background-image: none;
+  }
+  .service-bg-wrapper:before
+  {
+    background-image: none;
+  }
+ .service-para
+ {
+  text-align: center;
+ }
+ .service-box2
+ {
+   background: var(--primary-box-bg);
+   display: flex;
+   height:auto;
+   justify-content: center;
+   align-items: center;
+   gap: 23px;
+   padding: 0 20px;
+   overflow: hidden;
+ }
+ .service-box-content {
+   width: 85%;
+   margin: 20px 0;
+}
+.service-text
+{
+  font-size:16px;
+  text-align: justify;
+}
+.service-btn
+{
+ font-size: 16px;
+ margin-bottom: 20px;
+}
+ .modal-box {
+    max-width: 70%;
+    padding: 2rem;
+  }
+}
+@media screen and (min-width:1025px) and (max-width:1280px)
+{
+  .header-img
+  {
+    height:60px;
+  }
+  .video-container {
+    height: 90vh;
+  }
+  .service-grid
+  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0 40px; /* ✅ This centers the container horizontally */
+  }
+  .service-box
+  {
+    width:95%;
+  }
+  .service-bg-wrapper
+  {
+    background-image: none;
+  }
+  .service-bg-wrapper:before
+  {
+    background-image: none;
+  }
+ .service-para
+ {
+  text-align: center;
+ }
+   .modal-box {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width:1281px) and (max-width:1440px)
+{
+  .header-img
+  {
+    height:60px;
+  }
+  .video-container {
+    height: 420vh;
+  }
+  .service-grid
+  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0 60px; /* ✅ This centers the container horizontally */
+  }
+  .service-box
+  {
+    width:95%;
+  }
+  .service-bg-wrapper
+  {
+    background-image: none;
+  }
+  .service-bg-wrapper:before
+  {
+    background-image: none;
+  }
+ .service-para
+ {
+  text-align: center;
+ }
+   .modal-box {
+    max-width: 500px;
+  }
+
+}
+
+
+

@@ -1,0 +1,168 @@
+:root {
+  --heading-font: "Montserrat";
+  --subheading-font: "Martel";
+  --paragraph-font: "Open Sans";
+
+  --navbar-bg-gradient: linear-gradient(
+    325.86deg,
+    rgba(254, 186, 23, 0.96) 27.97%,
+    rgba(254, 186, 23, 0.68) 64.64%
+  );
+  --bottom-navbar-bg: rgba(255, 147, 31, 0.9);
+
+  --primary-box-bg: #fff3ca;
+  --secondary-box-bg: rgba(246, 185, 38, 0.7);
+
+  --footer-bg-color: rgba(183, 0, 0, 0.5);
+  --page-bg-color: #f5f5f5;
+}
+
+
+
+.krishna-container {
+  background-color: #ffeeb5;
+   padding: 140px 60px 20px  60px ;
+   margin: 80px 0;
+  text-align: center;
+  border-radius: 12px;
+  position: relative;
+}
+
+.krishna-image {
+  width: 400px;
+   max-width: 100%;
+   height: auto;
+   border-radius: 8px;
+   position: absolute;
+   top:-50px;
+   left:550px;
+   
+  
+
+}
+.krishna-title {
+  font-size: 20px;
+
+  font-weight: 600;
+  font-family: var(--heading-font);
+  margin-top: 40px;
+
+  margin-bottom: 20px;
+
+  color: #3b3b3b;
+
+  line-height: 1.5;
+}
+
+.krishna-description {
+  font-size: 18px;
+
+  color: #333;
+
+  line-height: 1.8;
+  margin: 0 auto;
+  text-align: justify;
+  font-family: var(--heading-font);
+  font-weight: 500;
+}
+
+.highlight {
+  color: #b30000;
+
+  font-weight: 600;
+}
+/* 320px - 480px: Small phones */
+@media screen and (max-width: 480px) {
+  .krishna-container {
+    padding: 100px 15px 20px;
+    margin: 60px 0;
+  }
+
+  .krishna-image {
+    position: static;
+    width: 90%;
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  .krishna-title {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .krishna-description {
+    font-size: 16px;
+    text-align: justify;
+  }
+}
+
+/* 481px - 768px: Tablets & small devices */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .krishna-container {
+    padding: 110px 20px 20px;
+    margin: 70px 0;
+  }
+
+  .krishna-image {
+    position: static;
+    width: 85%;
+    margin: 0 auto 20px;
+    display: block;
+  }
+
+  .krishna-title {
+    font-size: 19px;
+  }
+
+  .krishna-description {
+    font-size: 17px;
+  }
+}
+
+/* 769px - 1024px: Tablets landscape & small laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .krishna-container {
+    padding: 130px 40px 30px;
+  }
+
+  .krishna-image {
+    width: 350px;
+    top: -40px;
+    left: 52%;
+    transform: translateX(-50%);
+  }
+
+  .krishna-title {
+    font-size: 20px;
+  }
+
+  .krishna-description {
+    font-size: 18px;
+  }
+}
+
+/* 1025px - 1280px: Standard desktops */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .krishna-image {
+    width: 380px;
+    top: -50px;
+    left: 36%;
+  }
+
+  .krishna-title {
+    font-size: 20px;
+  }
+
+  .krishna-description {
+    font-size: 18px;
+  }
+}
+
+/* 1281px - 1440px: Large desktops */
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+  .krishna-image {
+    width: 400px;
+    top: -50px;
+    left: 431px;
+  }
+}

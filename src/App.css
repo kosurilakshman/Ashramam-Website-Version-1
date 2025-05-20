@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap');
+
+  :root {
+    /* Font Families */
+    --heading-font: "Montserrat";
+    --subheading-font: "Martel";
+    --paragraph-font: "Open Sans";
+  
+    /* Navbar Colors */
+    --navbar-bg-gradient: linear-gradient(325.86deg, rgba(254, 186, 23, 0.96) 27.97%, rgba(254, 186, 23, 0.68) 64.64%);
+    --bottom-navbar-bg: rgba(255, 147, 31, 0.9);
+  
+    /* Box Colors */
+    --primary-box-bg: #FFF3CA; /* 100% opacity */
+    --secondary-box-bg: rgba(246, 185, 38, 0.7); /* 70% opacity */
+  
+    /* Footer Colors */
+    --footer-bg-color: rgba(183, 0, 0, 0.7); /* B70000 with 70% opacity */
+    --footer-bg-image-opacity: 0.2; /* 20% opacity */
+  
+    /* Page Background */
+    --page-bg-color: #f5f5f5; /* 100% opacity */
+  }
+  

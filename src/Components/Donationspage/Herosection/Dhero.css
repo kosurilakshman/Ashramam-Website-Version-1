@@ -1,0 +1,128 @@
+:root {
+    --heading-font: "Montserrat";
+    --subheading-font: "Martel";
+    --paragraph-font: "Open Sans";
+  
+    --navbar-bg-gradient: linear-gradient(
+      325.86deg,
+      rgba(254, 186, 23, 0.96) 27.97%,
+      rgba(254, 186, 23, 0.68) 64.64%
+    );
+    --bottom-navbar-bg: rgba(255, 147, 31, 0.9);
+  
+    --primary-box-bg: #fff3ca;
+    --secondary-box-bg: rgba(246, 185, 38, 0.7);
+  
+    --footer-bg-color: rgba(183, 0, 0, 0.5);
+    --page-bg-color: #f5f5f5;
+  }
+  
+  /* Base styles */
+  .dhero-container {
+    background: var(--primary-box-bg);
+    padding: 0 30px;
+  }
+  
+  .dhero-heading {
+    font-size: 40px;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    text-align: center;
+    padding-top: 60px;
+  }
+  
+  .dhero-para {
+    font-size: 24px;
+    font-family: var(--paragraph-font);
+    font-weight: 300;
+    margin-top: 12px;
+    text-align: center;
+  }
+  
+  .dhero-img-box {
+    padding: 0px 140px;
+    margin-top: 20px;
+  }
+  
+  .dhero-img {
+    width: 80%;
+    height: 440px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* === Breakpoint: 1281px - 1440px === */
+  @media (max-width: 1440px) {
+    .dhero-img-box {
+      padding: 0px 120px;
+    }
+    .dhero-img {
+      height: 420px;
+    }
+  }
+  
+  /* === Breakpoint: 1025px - 1280px === */
+  @media (max-width: 1280px) {
+    .dhero-img-box {
+      padding: 0px 100px;
+    }
+    .dhero-img {
+      height: 400px;
+    }
+  }
+  
+  /* === Breakpoint: 769px - 1024px === */
+  @media (max-width: 1024px) {
+    .dhero-heading {
+      font-size: 32px;
+    }
+    .dhero-para {
+      font-size: 20px;
+    }
+    .dhero-img-box {
+      padding: 0px 60px;
+    }
+    .dhero-img {
+      height: 360px;
+    }
+  }
+  
+  /* === Breakpoint: 481px - 768px === */
+  @media (max-width: 768px) {
+    .dhero-heading {
+      font-size: 28px;
+      padding-top: 40px;
+    }
+    .dhero-para {
+      font-size: 18px;
+    }
+    .dhero-img-box {
+      padding: 0px 40px;
+    }
+    .dhero-img {
+      height: 300px;
+      width: 100%;
+    }
+  }
+  
+  /* === Breakpoint: 320px - 480px === */
+  @media (max-width: 480px) {
+    .dhero-container {
+      padding: 0 15px;
+    }
+    .dhero-heading {
+      font-size: 24px;
+      padding-top: 30px;
+    }
+    .dhero-para {
+      font-size: 16px;
+    }
+    .dhero-img-box {
+      padding: 0px 20px;
+    }
+    .dhero-img {
+      height: 220px;
+      width: 100%;
+    }
+  }
+  
